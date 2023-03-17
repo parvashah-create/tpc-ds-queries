@@ -55,7 +55,6 @@ def query_22(DMS):
     -- end query 22 in stream 0 using template query22.tpl
         """.format(DMS)
 
-    print(query)
     conn, cur = connect_to_snowflake()
 
     # Execute a SQL query
