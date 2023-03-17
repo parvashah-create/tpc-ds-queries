@@ -39,9 +39,9 @@ def main():
         result = query_15(d_qoy,d_year)
         st.write(result)
 
-        
 
-    st.subheader("get the average quantity, list price, discount, sales price for promotional items sold through the catalog channel where the promotion was not offered by mail or in an event for given gender, marital status and educational status.")
+
+    st.subheader("5. Get the average quantity, list price, discount, sales price for promotional items sold through the catalog channel where the promotion was not offered by mail or in an event for given gender, marital status and educational status.")
     cd_gender = st.selectbox("Select gender",("M", "F"))
     cd_marital_status = st.selectbox("Select marital status",("S", "D", "W", "U", "M"))
     cd_education_status = st.selectbox("Select educational status",("Secondary", "Advanced Degree", "2 yr Degree", "4 yr Degree", "Unknown", "Primary", "College"))
