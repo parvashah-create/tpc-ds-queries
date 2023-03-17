@@ -1,14 +1,14 @@
 import snowflake.connector
 import pandas as pd
-
+import os
 # Set up the connection parameters
 def connect_to_snowflake():
     conn = snowflake.connector.connect(
-        user='SHAHPARV',
-        password='Parvashah@123',
-        account='dhjnpjm-xv03884',
-        database='SNOWFLAKE_SAMPLE_DATA',
-        schema='TPCDS_SF10TCL'
+        user= os.getenv("user"),
+        password=os.getenv("password"),
+        account=os.getenv("account"),
+        database=os.getenv("database"),
+        schema=os.getenv("schema")
     )
 
     # Create a cursor object to execute SQL queries
